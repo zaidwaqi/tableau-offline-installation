@@ -1,0 +1,12 @@
+# Ignore Vagrant environment files
+.vagrant/
+
+# Ignore Vagrant log files
+vagrant.log
+
+# Ignore Vagrant SSH key files
+.vagrant/machines/*/virtualbox/private_key
+.vagrant/machines/*/virtualbox/public_key
+
+# Ignore Tableau installation files
+tableauInstaller/
