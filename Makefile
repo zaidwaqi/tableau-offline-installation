@@ -1,6 +1,7 @@
 .ONESHELL:
 .PHONY: deplist
 
+# need to verify the file exists before running make deplist
 deplist:
 	@dnf -q deplist tableauInstaller/tableau-server-2023-3-0.x86_64.rpm | grep provider.*x86_64$ | awk '{print $$2}' | sort | uniq > deplist.txt
 	@cat deplist.txt

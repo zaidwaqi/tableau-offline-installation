@@ -7,9 +7,9 @@ Vagrant.configure("2") do |config|
     vb.gui = false
 
     # Customize the amount of cup and memory on the VM:
-    vb.cpus = "4"
-    vb.memory = "16384"
+    vb.cpus = "2"
+    vb.memory = "4096"
   end
 
-  config.vm.provision "shell", path: "scripts/install.sh"
+  # config.vm.provision "shell", path: "scripts/install.sh"
 end
